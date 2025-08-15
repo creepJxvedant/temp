@@ -1,5 +1,5 @@
 import { lazy, useState, Suspense, useEffect } from "react";
-import GitHubCalendar from "react-github-calendar";
+
 import "./output.css";
 import "./index.css";
 
@@ -10,6 +10,8 @@ const Project = lazy(() => import("./components/Project"));
 const Footer = lazy(() => import("./components/Footer"));
 const ScrollWatcher = lazy(() => import("./components/ScrollWatcher"));
 const Hero = lazy(() => import("./components/Hero"));
+const GithubContribution = lazy(() => import("./components/GithubContribution.jsx"));
+
 
 function App() {
   const [showLoader, setShowLoader] = useState(true);
@@ -67,20 +69,9 @@ function App() {
             <Project />
           </div>
 
-          <div className="relative w-[100vw] h-[100vh] flex items-center justify-center">
-            <div className="bg-white/35 shadow-lg rounded-lg p-6 w-[90%] md:w-[70%] lg:w-[80%]">
-              <h2 className="text-3xl font-bold text-green-600 mb-6 text-center">
-                GitHub Contributions
-              </h2>
-              <GitHubCalendar
-                username="creepjxvedant"
-                blockSize={16}
-                blockMargin={4}
-                color="#1e90ff"
-                fontSize={16}
-              />
-            </div>
-          </div>
+        
+        <GithubContribution />
+          
           <Footer />
         </main>
       </Suspense>
