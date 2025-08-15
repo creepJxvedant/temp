@@ -4,12 +4,15 @@ import "./output.css";
 import "./index.css";
 
 import { isMobile } from "./components/script.js";
-const Features = lazy(() => import("./components/Features"));
-const Tools = lazy(() => import("./components/Tools"));
+
+
+import Features from "./components/Features";
+import ScrollWatcher from "./components/ScrollWatcher";
+import Hero from "./components/Hero";
+import Tools from "./components/Tools";
+
 const Project = lazy(() => import("./components/Project"));
 const Footer = lazy(() => import("./components/Footer"));
-const ScrollWatcher = lazy(() => import("./components/ScrollWatcher"));
-const Hero = lazy(() => import("./components/Hero"));
 const GithubContribution = lazy(() => import("./components/GithubContribution.jsx"));
 
 
