@@ -540,3 +540,8 @@ section.list {
     transition: none !important;
   }
 }
+
+.github-contribution .react-activity-calendar__scroll-container .react-activity-calendar__legend-month *{
+  fill: #eee !important; 
+  font-size: 14px; 
+}
