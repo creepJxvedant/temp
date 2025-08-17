@@ -32,7 +32,7 @@ function App() {
   return (
     <>
       <div
-        className={`will-change-auto w-[100vw] h-[100vh] bg-[crimson] z-[100] fixed pointer-events-none ${
+        className={`will-change-auto w-[100vw] h-[100vh] bg-[crimson] z-[5000] fixed pointer-events-none ${
           !showLoader && showContent && "loader"
         }`}
       >
