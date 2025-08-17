@@ -213,6 +213,8 @@ const Footer = () => {
         <div className="absolute inset-0 bg-gradient-to-b from-transparent to-gray-900 opacity-50"></div>
         <div className="sparkles"></div>
       </div>
+     <img src="https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fvedantverma.onrender.com%2F&label=Visitors&countColor=%23263759" />
+
       <Toaster />
     </footer>
   );

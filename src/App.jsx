@@ -1,11 +1,7 @@
 import { lazy, useState, Suspense, useEffect } from "react";
-
 import "./output.css";
 import "./index.css";
-
 import { isMobile } from "./components/script.js";
-
-
 import Features from "./components/Features";
 import ScrollWatcher from "./components/ScrollWatcher";
 import Hero from "./components/Hero";
